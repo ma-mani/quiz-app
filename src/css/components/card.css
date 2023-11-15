@@ -1,0 +1,58 @@
+.card {
+    height: 20rem;
+    position: relative;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+    margin-bottom: 2.4rem;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.bookmark__icon {
+    width: 3.2rem;
+    aspect-ratio: 1;
+    position: absolute;
+    right: 1rem;
+    top: -1.5rem;
+    z-index: 1;
+    fill: #fff;
+    cursor: pointer;
+}
+
+.--green {
+    fill: var(--color-main);
+    stroke: var(--color-main);
+}
+
+.card__question {
+    font-size: 2rem;
+}
+
+.card__btn {
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: fantasy;
+    border: none;
+}
+
+.card__btn:hover {
+    background-color: var(--color-main);
+}
+
+.card__answer {
+    font-size: 1.6rem;
+}
+
+.card__hide-answer {
+    display: none;
+}
+
+.card__hash {
+    font-size: 1.2rem;
+    align-self: flex-start;
+}
