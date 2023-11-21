@@ -1,0 +1,79 @@
+.form {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--color-main300);
+}
+
+.form__form {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    grid-template-rows: 20% 5% 20% 5% 10% 10%;
+    row-gap: 1rem;
+}
+
+/* Labels */
+
+.form__questionlabel {
+    font-size: 1.6rem;
+}
+
+.form__answerlabel {
+    font-size: 1.6rem;
+}
+
+.form__taglabel {
+    font-size: 1.6rem;
+}
+
+.form__form label {
+    align-self: center;
+    justify-self: center;
+}
+
+/* Textarea and Input */
+textarea {
+    resize: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    box-shadow: 0rem 0rem 1.5rem var(--color-main);
+}
+
+/* Max charakter text */
+.form__question-left {
+    grid-column: 2/3;
+    justify-self: end;
+    font-size: 1.2rem;
+}
+
+.form__answer-left {
+    grid-column: 2/3;
+    justify-self: end;
+    font-size: 1.2rem;
+}
+
+/* Button */
+
+.form__form .form__btn {
+    grid-column: 1/-1;
+    justify-self: center;
+    margin-top: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    min-height: 3rem;
+    min-width: 12rem;
+    border-radius: 9px;
+    border: none;
+}
+
+.form__form .form__btn:hover {
+    background-color: var(--color-main);
+}

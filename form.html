@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Quiz-App</title>
+        <title>Form Card</title>
         <script>
             // Check local storage
             let localS = localStorage.getItem('theme');
@@ -13,75 +13,32 @@
             }
         </script>
         <link rel="stylesheet" href="./src/css/styles.css" />
-        <script src="./src/js/script.js" type="module" defer></script>
+        <script src="./src/js/form.js" type="module" defer></script>
     </head>
     <body>
         <header class="header">
             <h1>Quiz App</h1>
         </header>
         <main data-js="main">
-            <!-- <div class="card">
-                <svg
-                    data-js="bookmark-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="bookmark__icon"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                    />
-                </svg>
+           <section class="form">
+            <form data-js="form" class="form__form">
+                <label class="form__questionlabel" for="question">Your question:</label>
+                <textarea class="form__textarea" name="question" id="question" cols="30" rows="5"></textarea>
+                <span class="form__question-left">150 characters left</span>
 
-                <span class="card__question">What does CSS stand for?</span>
-                <button class="card__btn" data-js="button">Show Answer</button>
-                <span
-                    class="card__answer card__hide-answer"
-                    data-js="card__answer"
-                    >Cascading Style Sheet</span
-                >
-                <div class="card__hash">
-                    <span>#html</span>
-                    <span>#css</span>
-                    <span>#abbreviation</span>
-                </div>
-            </div>
-            <div class="card">
-                <svg
-                    data-js="bookmark-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="bookmark__icon"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                    />
-                </svg>
-                <span class="card__question">What does CSS stand for?</span>
-                <button class="card__btn" data-js="button-1">
-                    Show Answer
-                </button>
-                <span
-                    class="card__answer card__hide-answer"
-                    data-js="card__answer-1"
-                    >Cascading Style Sheet</span
-                >
-                <div class="card__hash">
-                    <span>#html</span>
-                    <span>#css</span>
-                    <span>#abbreviation</span>
-                </div>
-            </div> -->
+                <label class="form__answerlabel" for="answer">Your answer:</label>
+                <textarea name="answer" id="answer" cols="30" rows="5"></textarea>
+                <span class="form__answer-left">150 characters left</span>
+
+                <label class="form__taglabel" for="">Tag:</label>
+                <input type="text">
+
+                <button type="submit" class="form__btn">Submit</button>
+            </form>
+           </section>
+
         </main>
+
         <footer>
             <nav>
                 <a href="index.html" class="--active">
@@ -135,7 +92,6 @@
                         />
                     </svg>
                 </a>
-
                 <a href="profile.html">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
